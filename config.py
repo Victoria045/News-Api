@@ -1,8 +1,14 @@
+import os
+
 class Config:
     '''
     General configuration parent class
     '''
-    pass
+    ALL_SOURCES_URL = 'https://newsapi.org/v2/sources?language=en&apiKey={}'
+
+    SOURCE_URL = ' https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
+
+    API_KEY = os.environ.get('NEWS_API_KEY')
 
 
 
