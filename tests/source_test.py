@@ -19,5 +19,5 @@ class SourceArticleTest(unittest.TestCase):
         self.assertTrue(isinstance(self.new_source,Source))
 
 if __name__ == '__main__':
-      unittest.main()
-    # manage.run()
+      # unittest.main()
+    # manager.run()
