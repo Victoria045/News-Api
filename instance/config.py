@@ -1,0 +1,3 @@
+# import os
+
+NEWS_API_KEY = '0c847998190b427089f4d10d40a13abb'
