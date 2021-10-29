@@ -1,9 +1,11 @@
 from flask import Flask
 from config import config_options
 from flask_bootstrap import Bootstrap
+from flask_moment import Moment
 
 
 bootstrap = Bootstrap()
+moment = Moment()
 
 
 def create_app(config_name):
@@ -14,7 +16,7 @@ def create_app(config_name):
 
     #initializing flask extensions
     bootstrap.init_app(app)
-    # moment.init_app(app)
+    moment.init_app(app)
 
     # Registering the blueprint
     from .main import main as main_blueprint
@@ -26,3 +28,5 @@ def create_app(config_name):
     configure_request(app)
 
     return app
+
+  
