@@ -7,8 +7,7 @@ class Config:
 
     SOURCE_URL = ' https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
 
-    # API_KEY = os.environ.get('NEWS_API_KEY')
-    API_KEY = '0c847998190b427089f4d10d40a13abb'
+    API_KEY = os.environ.get('NEWS_API_KEY')
 
 
 class ProdConfig(Config):
